@@ -6,8 +6,6 @@ from secrets import spotify_access_token, spotify_user_name
 SPOTIFY_CREATE_PLAYLIST_URL = f'https://api.spotify.com/v1/users/{spotify_user_name}/playlists'
 PLAYLIST_ITEM = 'https://api.spotify.com/v1/playlists/5e8ijEDzlaB0y9apSoZNBI/tracks'
 
-# GET FROM https://developer.spotify.com/console/post-playlists/?user_id=&body=%7B"name"%3A"New%20Playlist"%2C"description"%3A"New%20playlist%20description"%2C"public"%3Afalse%7D
-ACCESS_TOKEN = ''
 
 def create_playlist_on_spotify(name, public):
     responses = requests.post(
@@ -45,7 +43,7 @@ def main():
     get_top_artist = get_top_artists()
     get_top_artists()
     #print(f"top artists: {get_top_artists}")
-    print(f"Playlist: {playlist}")
+    #print(f"Playlist: {playlist}")
 
 if __name__ == '__main__':
     main()
