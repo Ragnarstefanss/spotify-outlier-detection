@@ -1,2 +1,2 @@
 # spotify-outlier-detection
-Recommendations that do not fit specific user since he might have listened to songs by put on by other people
+Finding outlier recommendations that do not apply to a specific user, this could have happened because somebody else used his account to listen to their prefered song.
