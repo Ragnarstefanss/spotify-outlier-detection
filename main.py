@@ -46,7 +46,7 @@ def user_top_tracks():
         }
     )
     json_resp = responses.json()
-    print(json.dumps(json_resp, indent = 3))
+    print(json.dumps(json_resp, indent = 4))
     #return json_resp
 
 def get_recommendation():
@@ -78,8 +78,11 @@ def get_recommendation_from_artist(artist_id, country_code):
         }
     )
     json_resp = responses.json()
-    with open(f'data/recommendations_from_{artist_id}.json', 'w') as f:
-        json.dump(json_resp, f, ensure_ascii=False)
+    #with open(f'data/recommendations_from_{artist_id}.json', 'w') as f:
+     #   json.dump(json_resp, f, ensure_ascii=False)
+    print(json_resp['tracks'][0].keys())
+
+    print(json_resp['tracks'][1])
     #return json_resp
 
 def main():
