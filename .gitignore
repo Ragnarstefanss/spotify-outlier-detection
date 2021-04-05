@@ -2,3 +2,6 @@ secrets/*
 secrets.py
 recommender/*
 __pycache__/*
+.cache-user-library-read
+.ipynb_checkpoints/
+web/
